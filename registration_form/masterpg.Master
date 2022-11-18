@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpg.master.cs" Inherits="registration_form.masterpg" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <a target="_blank" href="https://icons8.com/icon/50278/camera"></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <a target="_blank" href="https://icons8.com/icon/AVoz3hnBHbqs/home"></a>
+    <a target="_blank" href="https://icons8.com/icon/23445/update-user"></a>
+    <a target="_blank" href="https://icons8.com/icon/Prtl8k4tXeaa/password-window"></a>
+    <a target="_blank" href="https://icons8.com/icon/uVA8I3rgWfOs/logout"></a>
+
+</head>
+<body>
+    <form id="form1" runat="server">       
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Mobilestyx</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="home.aspx">
+                    <img src="https://img.icons8.com/external-xnimrodx-blue-xnimrodx/30/000000/external-home-online-learning-xnimrodx-blue-xnimrodx.png" /><b> Home</b></a></li>
+                <li><a href="uselfdt.aspx">
+                    <img src="https://img.icons8.com/office/30/000000/change-user-female.png" />Update Profile</a></li>
+                <li><a href="changepass.aspx">
+                    <img src="https://img.icons8.com/fluency/30/000000/password-window.png" />Change Password</a></li>
+                <li><a href="changpic.aspx">
+                    <img src="https://img.icons8.com/ultraviolet/30/000000/camera.png" />Change Profile Picture</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active pe-4">
+                    <asp:Image ID="Image2" Height="40px" Width="40px" asp-append-version="true" runat="server" ImageUrl='<%# Eval("image") %>' />
+                    <asp:Label ID="lb1" class="nav-link" runat="server" Text="Label"></asp:Label></li>
+                <li><a href="login.aspx">
+                    <img src="https://img.icons8.com/fluency/30/000000/exit.png" />Logout</a></li>
+            </ul>
+        </div>     
+</nav>
+     
+           <%-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <asp:LinkButton class="nav-link active" aria-current="page" ID="LinkButton1" runat="server">Home</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton class="nav-link active" aria-current="page"ID="LinkButton2" runat="server">Login</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton3" class="nav-link active" aria-current="page"runat="server">Register</asp:LinkButton>
+                            </li>
+                            <li class="nav-item">
+                                <<asp:LinkButton ID="LinkButton4" class="nav-link active" aria-current="page" runat="server">Logout</asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>     
+    </form>
+</body>
+</html>
+
+ 
+    
+        
